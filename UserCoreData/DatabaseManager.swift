@@ -43,11 +43,29 @@ class DatabaseManager {
     func fetchUser() -> [UserEntity]{
         var users:[UserEntity] = []
         
+        let fetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
         do{
-            users = try getContext().fetch(UserEntity.fetchRequest())
+            users = try getContext().fetch(fetchRequest)
         }catch{
             print("Fetch Error \(error.localizedDescription)")
         }
+        return users
+    }
+    
+    
+    func fetchUser(keyword: String) -> [UserEntity] {
+        var users: [UserEntity] = []
+        
+        let fetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
+        let predicate = NSPredicate(format: "firstName CONTAINS[c] %@ OR lastName CONTAINS[c] %@", keyword, keyword)
+        fetchRequest.predicate = predicate
+        
+        do {
+            users = try getContext().fetch(fetchRequest)
+        } catch {
+            print("Fetch Error: \(error.localizedDescription)")
+        }
+        
         return users
     }
 }

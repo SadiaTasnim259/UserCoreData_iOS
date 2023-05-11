@@ -16,33 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntp-if-MBC">
-                                <rect key="frame" x="16" y="368.66666666666669" width="361" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-w6-FaV">
-                                <rect key="frame" x="16" y="465.66666666666669" width="361" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-Wy-ecZ">
-                                <rect key="frame" x="16" y="417.66666666666669" width="361" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhw-ya-lVb">
-                                <rect key="frame" x="16" y="513.66666666666663" width="361" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiF-sA-Pxf">
-                                <rect key="frame" x="119" y="602.66666666666663" width="172" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-9M-bZt">
+                                <rect key="frame" x="20" y="343" width="353" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntp-if-MBC">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-Wy-ecZ">
+                                        <rect key="frame" x="0.0" y="46" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-w6-FaV">
+                                        <rect key="frame" x="0.0" y="92" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhw-ya-lVb">
+                                        <rect key="frame" x="0.0" y="138" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiF-sA-Pxf">
+                                <rect key="frame" x="119" y="575" width="172" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -105,10 +105,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nH6-9M-bZt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ml-Tl-hWp"/>
+                            <constraint firstItem="nH6-9M-bZt" firstAttribute="top" secondItem="FID-uS-ARF" secondAttribute="bottom" constant="60" id="C3K-Ne-uxR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xiF-sA-Pxf" secondAttribute="trailing" constant="102" id="Jyn-Uq-bky"/>
                             <constraint firstItem="FID-uS-ARF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M0F-PQ-z4j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LdD-gy-hYo" secondAttribute="bottom" id="RiY-sC-Bmn"/>
+                            <constraint firstItem="xiF-sA-Pxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="TQe-tw-pIp"/>
                             <constraint firstItem="FID-uS-ARF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UGm-po-zpb"/>
                             <constraint firstItem="LdD-gy-hYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWz-JS-qGC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nH6-9M-bZt" secondAttribute="trailing" constant="20" id="cvL-Uh-ib4"/>
+                            <constraint firstItem="xiF-sA-Pxf" firstAttribute="top" secondItem="nH6-9M-bZt" secondAttribute="bottom" constant="60" id="gYo-D0-wuh"/>
+                            <constraint firstItem="nH6-9M-bZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="goo-Rv-Vml"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="mMK-fe-qLa"/>
@@ -138,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-2S-lhJ">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserEntityTableCellTableViewCell" rowHeight="80" id="YvF-Ay-zYP" customClass="UserEntityTableCellTableViewCell" customModule="UserCoreData" customModuleProvider="target">
@@ -199,14 +206,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7A-cI-2ZZ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ucm-19-WsD" id="N5F-0y-hRC"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tDk-Nf-Dfi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p7A-cI-2ZZ" firstAttribute="top" secondItem="tDk-Nf-Dfi" secondAttribute="top" id="0U6-zu-hes"/>
                             <constraint firstItem="bJF-2S-lhJ" firstAttribute="leading" secondItem="tDk-Nf-Dfi" secondAttribute="leading" id="3fM-uL-xZB"/>
+                            <constraint firstItem="p7A-cI-2ZZ" firstAttribute="leading" secondItem="tDk-Nf-Dfi" secondAttribute="leading" id="7AI-qK-DSr"/>
+                            <constraint firstItem="p7A-cI-2ZZ" firstAttribute="trailing" secondItem="tDk-Nf-Dfi" secondAttribute="trailing" id="UlA-2V-sqY"/>
                             <constraint firstItem="tDk-Nf-Dfi" firstAttribute="trailing" secondItem="bJF-2S-lhJ" secondAttribute="trailing" id="f9v-a7-zTX"/>
                             <constraint firstItem="tDk-Nf-Dfi" firstAttribute="bottom" secondItem="bJF-2S-lhJ" secondAttribute="bottom" id="m3y-oh-8H0"/>
-                            <constraint firstItem="bJF-2S-lhJ" firstAttribute="top" secondItem="tDk-Nf-Dfi" secondAttribute="top" id="p0t-rj-BG6"/>
+                            <constraint firstItem="bJF-2S-lhJ" firstAttribute="top" secondItem="p7A-cI-2ZZ" secondAttribute="bottom" id="nyT-ri-uyt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Users" largeTitleDisplayMode="never" id="z8d-NQ-1x3">
@@ -217,8 +234,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="p7A-cI-2ZZ" id="y5X-68-3jU"/>
                         <outlet property="tableView" destination="bJF-2S-lhJ" id="WEf-IF-aEG"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="OoI-fd-GlA"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToRegisterPage" id="OoI-fd-GlA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzt-uW-74W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
